@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gartenparty - Home</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Header section with site title and navigation menu -->
+        <header>
+            <h1>Gartenparty</h1>
+            <nav>
+                <ul>
+                    <!-- Navigation links -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ueber_uns.html">Über uns</a></li>
+                    <li><a href="ort_und_anfahrt.html">Ort & Anfahrt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Top banner/news with event invitation -->
+            <section class="news">
+                <h2>Gartenparty am 12. Juli!</h2>
+                <p>Geniesse mit uns einen entspannten Abend im Grünen mit gutem Essen, Musik und bester Gesellschaft</p>
+                <!-- Call-to-action link -->
+                <p><a href="#party-invitation">Ja, ich bin dabei</a></p>
+            </section>
+
+            <!-- Slogan section -->
+            <section class="slogan">
+                <blockquote>
+                    "Gemeinsam feiern und den Sommer in <br />
+                    unserem Garten in Kreuzlingen genießen"
+                </blockquote>
+            </section>
+
+            <!-- Event information section with image and details -->
+            <section class="event_info">
+                <img src="images/kreuzlingen_hafen.png" alt="kreuzlingen_hafen" />
+                <div class="info">
+                    <h2>Gemütliches Gartenfest am 12. Juli 2025</h2>
+                    <p>
+                        Die Party beginnt am <span style="color: #197b30; font-weight: bold">Samstag, den 12. Juli</span>, um <span style="color: #d97325; font-weight: bold">17 Uhr</span> in unserem
+                        Garten in Kreuzlingen.<br />
+                        Für Snacks, Salate, Baguette, Soßen und glutenfreies Brot sowie Getränke ist gesorgt.<br />
+                        Wer mag, kann gerne eigenes Grillgut mitbringen.<br />
+                    </p>
+                </div>
+            </section>
+
+            <section class="highlights">
+                <!-- Drinks Section -->
+                <div>
+                    <img src="images/drinks.png" alt="drinks" />
+                    <h3>Erfrischende Getränke</h3>
+                    <!-- Drinks description -->
+                    <p>Kühle Getränke und Cocktails, frisch gemixt für den perfekten Sommergenuss.<br />Ideal, um an warmen Tagen den Durst zu löschen</p>
+                </div>
+
+                <!-- Grill Section -->
+                <div>
+                    <img src="images/grill.png" alt="grill" />
+                    <h3>Leckeres Grillgut</h3>
+                    <!-- Grill description -->
+                    <p>Herzhafte Spieße, knackige Würstchen und frisches Gemüse vom Grill.<br />Perfekt für den gemütlichen Sommerabend</p>
+                </div>
+
+                <!-- Games Section -->
+                <div>
+                    <img src="images/beerpong.png" alt="beerpong" />
+                    <h3>Garten Spiele</h3>
+                    <!-- Games description -->
+                    <p>Spaß und Unterhaltung mit Trinkspielen wie Beerpong oder Flunkyball.<br />Lachen und gute Laune garantiert</p>
+                </div>
+            </section>
+
+            <section id="party-invitation" class="rsvp">
+                <h2>Bitte gib uns Bescheid!</h2>
+                <p>
+                    Wir freuen uns, wenn du dabei bist.<br />
+                    Bitte fülle das Formular aus, damit wir planen können.
+                </p>
+                <form class="party-form" name="party-invitation" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <!-- Hidden field for spam protection -->
+                    <input type="hidden" name="form-name" value="party-invitation" />
+                    <p style="display: none">
+                        <label>Don not fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+
+                    <!-- Name -->
+                    <p>
+                        <strong>Dein Name:</strong><br />
+                        <label>
+                            <input type="text" name="name" required />
+                        </label>
+                    </p>
+
+                    <!-- E-Mail -->
+                    <p>
+                        <strong>Deine E-Mail:</strong><br />
+                        <label>
+                            <input type="email" name="email" required />
+                        </label>
+                    </p>
+
+                    <!-- Confirmation for the party -->
+                    <p>
+                        <strong>Kommst du zur Party?</strong><br />
+                        <span class="radio-group">
+                            <label> <input type="radio" name="teilnahme" value="Ja" required /> Ja </label>
+                            <label> <input type="radio" name="teilnahme" value="Nein" /> Nein </label>
+                        </span>
+                    </p>
+
+                    <!-- Query overnight stay -->
+                    <p>
+                        <strong>Übernachtest du bei uns?</strong><br />
+                        <span class="radio-group">
+                            <label> <input type="radio" name="uebernachtung" value="Ja" required /> Ja </label>
+                            <label> <input type="radio" name="uebernachtung" value="Nein" /> Nein </label>
+                        </span>
+                    </p>
+
+                    <!-- Intolerances -->
+                    <p>
+                        <strong>Was magst du nicht?</strong><br />
+                        <label>
+                            <input type="checkbox" name="restriktionen" value="Fleisch" />
+                            Fleisch
+                        </label>
+                        <label>
+                            <input type="checkbox" name="restriktionen" value="Gluten" />
+                            Gluten
+                        </label>
+                        <label>
+                            <input type="checkbox" name="restriktionen" value="Alkoholfreies Bier" />
+                            Alkoholfreies Bier
+                        </label>
+                        <label>
+                            Sonstiges:
+                            <input type="text" name="restriktionen_andere" id="andere-text" placeholder="Bitte eintragen" style="width: 160px; height: 27px" />
+                        </label>
+                    </p>
+
+                    <!-- Personal message -->
+                    <p>
+                        <strong>Nachricht / Wünsche:</strong><br />
+                        <label>
+                            <textarea name="nachricht" rows="4"></textarea>
+                        </label>
+                    </p>
+
+                    <p>
+                        <button type="submit">Absenden</button>
+                    </p>
+                </form>
+            </section>
+        </main>
+
+        <!-- Copyright information -->
+        <footer>
+            <p>Copyright © 2025 Gartenparty-Remisbergstrasse. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>

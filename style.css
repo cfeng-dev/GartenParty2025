@@ -1,0 +1,419 @@
+/* PC standard */
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #000000;
+}
+header {
+    background-color: rgba(35, 28, 26, 0.8);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+}
+h1 {
+    color: white;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+    background-image: url(images/logo);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 210px;
+    text-indent: -9999px;
+}
+header ul {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 60px;
+}
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+.news {
+    background-color: antiquewhite;
+    color: white;
+    height: 95vh;
+    background-image: url("images/evening_garden_party.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.news h2 {
+    font-size: 60px;
+    margin-top: 60px;
+}
+.news p {
+    color: #fef7e6;
+    font-size: 18px;
+    margin: 25px 0;
+}
+.news a {
+    color: white;
+    text-decoration: none;
+    border: 3px solid #acacac;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.slogan {
+    background-color: #485652;
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+.slogan-text {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 700px;
+}
+.filling {
+    background-color: white;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+.event_info {
+    display: flex;
+}
+.event_info img {
+    width: 50%;
+}
+.info {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.info p {
+    text-align: center;
+    line-height: 2em;
+}
+.event_info iframe {
+    flex: 1;
+    width: 100%;
+    height: 634px;
+    border: 0;
+}
+.highlights {
+    display: flex;
+    background-color: #ede9db;
+    justify-content: space-between;
+    align-items: center;
+    align-items: stretch; /* All children are raised equally */
+    padding: 100px 180px 80px;
+}
+.highlights div {
+    width: 300px;
+    text-align: center;
+}
+.highlights img {
+    width: 100%;
+    border-radius: 10px;
+}
+.highlights h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.highlights p {
+    font-size: 14px;
+    line-height: 1.6em;
+}
+.rsvp {
+    background-color: #485652;
+    color: white;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rsvp .party-form {
+    width: 100%;
+    max-width: 420px;
+}
+.rsvp h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.rsvp p {
+    text-align: center;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+}
+.rsvp input,
+.rsvp button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #949d9a;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.rsvp button {
+    width: 80px;
+    cursor: pointer;
+}
+input::placeholder {
+    color: #dddddd;
+}
+input:focus {
+    outline: none; /* Remove focus effect */
+    border-color: #e0e9a3; /* Border color when in focus */
+}
+
+form.party-form {
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background-color: #2f3438;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+form.party-form p {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+form.party-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.party-form input[type="radio"] {
+    margin-right: 8px;
+}
+.party-form label.radio-inline {
+    margin-right: 18px;
+}
+.radio-group {
+    display: flex;
+    gap: 22px; /* Distance between yes and no */
+    margin-top: 8px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 3px; /* Distance between the radio button and the text */
+}
+
+form.party-form input[type="text"],
+form.party-form input[type="email"],
+form.party-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background-color: #1e2225;
+    color: #eee;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+form.party-form input[type="text"]:focus,
+form.party-form input[type="email"]:focus,
+form.party-form textarea:focus {
+    border-color: #a6c8ff;
+    outline: none;
+    background-color: #2a2f34;
+}
+
+footer {
+    background-color: #000000;
+    color: #b7b7b7;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.menu {
+    display: none;
+}
+
+/* Mobile optimization: */
+@media screen and (max-width: 600px) {
+    header ul {
+        display: none;
+    }
+    header h1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .news {
+        padding: 0 10px;
+        min-height: 100vh;
+    }
+    .news h2 {
+        font-size: 2em;
+        margin-top: 20px;
+        word-break: break-word;
+    }
+    .news p {
+        font-size: 1.1em;
+        margin: 12px 0;
+    }
+    .news,
+    .news h2,
+    .news p {
+        text-align: center;
+    }
+    .slogan {
+        font-size: 1.1em;
+        height: auto;
+        padding: 25px 0;
+    }
+    .slogan blockquote {
+        font-size: 1.1em;
+        padding: 0 12px;
+        text-align: center;
+    }
+    .slogan-text {
+        font-size: 1em;
+        padding: 0 8px;
+        text-align: center;
+    }
+    .menu {
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .event_info {
+        flex-direction: column;
+        align-items: center; /* centers both */
+        text-align: center; /* centered content for this section */
+    }
+    .event_info img {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 0px;
+    }
+    .event_info iframe {
+        width: 100%;
+        max-width: 400px;
+        aspect-ratio: 1 / 1; /* 1:1 square, modern way */
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .info {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 0px; /* vertical + lateral distance */
+        text-align: center;
+    }
+    .info h2 {
+        font-size: 33px;
+    }
+    .info p {
+        max-width: 300px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .highlights {
+        flex-direction: column;
+        align-items: center; /* Centers the boxes horizontally */
+        justify-content: center;
+        padding: 60px 5vw 30px 5vw; /* top right bottom left */
+    }
+    .highlights div {
+        margin-bottom: 30px; /* Distance between the individual boxes */
+        width: 100%;
+        max-width: 300px; /* Maximum as wide as the image */
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .highlights img {
+        width: 100%;
+        max-width: 300px; /* wide of the image */
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .rsvp .party-form {
+        max-width: 80vw;
+        padding: 15px 6vw; /* a little more edge on the phone */
+    }
+    .rsvp {
+        padding: 32px 8px;
+    }
+    .rsvp h2 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+    .rsvp p {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+    .rsvp h2,
+    .rsvp p {
+        text-align: center;
+    }
+    footer {
+        font-size: 12px;
+        text-align: center;
+        height: auto;
+        padding: 16px 0;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row; /* horizontal instead of vertical */
+        gap: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+    }
+
+    nav li {
+        margin-right: 15px;
+    }
+}
