@@ -293,22 +293,74 @@ footer {
     font-size: 14px;
 }
 .hamburger {
-    display: none !important;
+    display: none;
 }
 #main-nav {
     display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+    opacity: 1;
 }
 
 /* Mobile optimization: */
 @media screen and (max-width: 600px) {
     .hamburger {
-        display: block !important;
+        display: block;
+        position: fixed;
+        top: 4px;
+        right: 8px;
+        z-index: 2000; /* higher than the menu (e.g. 2000 > 1100) */
     }
+
+    /* Fullscreen Styles (mobile only) */
     #main-nav {
-        display: none;
+        display: none !important;
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(30, 30, 30, 0.97);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1100;
+        opacity: 0;
+        transition: opacity 0.3s;
     }
     #main-nav.open {
-        display: block;
+        display: flex !important;
+        opacity: 1;
+    }
+    #main-nav ul {
+        position: static !important;
+        right: auto !important;
+        top: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    #main-nav li {
+        font-size: 1.8rem;
+        margin-right: 0 !important;
+        margin-bottom: 0 !important;
+        line-height: 50px !important;
+    }
+
+    #main-nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.2s;
+    }
+    #main-nav a:hover {
+        color: #f7c873;
     }
 
     header ul {
@@ -430,16 +482,5 @@ footer {
         text-align: center;
         height: auto;
         padding: 16px 0;
-    }
-    nav ul {
-        display: flex;
-        flex-direction: row; /* horizontal instead of vertical */
-        gap: 10px;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
-    }
-
-    nav li {
-        margin-right: 15px;
     }
 }
