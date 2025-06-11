@@ -1,4 +1,4 @@
-// hamburger-menu.js
+// hamburger_menu.js
 
 // Universal forEach for Arrays/NodeLists/Objects
 var forEach = function (t, o, r) {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Close menu when any menu link is clicked (recommended UX)
+    // Close menu when any menu link is clicked
     if (nav) {
         nav.querySelectorAll("a").forEach(function (link) {
             link.addEventListener("click", function () {
