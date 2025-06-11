@@ -505,8 +505,8 @@ footer {
         align-items: center;
         flex-direction: column;
         z-index: 1100;
-        opacity: 0;
-        transition: opacity 0.3s;
+        opacity: 0; /* initially invisible, is animated by GSAP */
+        transition: none; /* Transition only via GSAP, no CSS transitions necessary */
     }
     #main-nav.open {
         display: flex; /* Show when menu is open */
@@ -545,7 +545,5 @@ footer {
     body.menu-open,
     html.menu-open {
         overflow: hidden;
-        height: 100vh;
-        position: relative;
     }
 }
