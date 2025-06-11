@@ -4,13 +4,25 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gartenparty - Home</title>
+        <!-- Library for animated hamburger menu icons -->
+        <link rel="stylesheet" href="hamburgers.css" />
+        <!-- Main site stylesheet -->
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <!-- Header section with site title and navigation menu -->
+        <!-- === Header: Site title and navigation === -->
         <header>
             <h1>Gartenparty</h1>
-            <nav>
+
+            <!-- Hamburger menu button for mobile navigation -->
+            <button class="hamburger hamburger--slider" type="button" aria-label="Toggle navigation menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <!-- Main navigation menu -->
+            <nav id="main-nav">
                 <ul>
                     <!-- Navigation links -->
                     <li><a href="index.html">Home</a></li>
@@ -19,6 +31,7 @@
                 </ul>
             </nav>
         </header>
+        <!-- === End Header === -->
 
         <main>
             <!-- Top banner/news with event invitation -->
@@ -182,5 +195,6 @@
         <footer>
             <p>Copyright © 2025 Gartenparty-Remisbergstrasse. All Rights Reserved.</p>
         </footer>
+        <script src="hamburger_menu.js"></script>
     </body>
 </html>

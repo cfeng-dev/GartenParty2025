@@ -292,12 +292,25 @@ footer {
     align-items: center;
     font-size: 14px;
 }
-.menu {
-    display: none;
+.hamburger {
+    display: none !important;
+}
+#main-nav {
+    display: block;
 }
 
 /* Mobile optimization: */
 @media screen and (max-width: 600px) {
+    .hamburger {
+        display: block !important;
+    }
+    #main-nav {
+        display: none;
+    }
+    #main-nav.open {
+        display: block;
+    }
+
     header ul {
         display: none;
     }
@@ -337,17 +350,6 @@ footer {
         font-size: 1em;
         padding: 0 8px;
         text-align: center;
-    }
-    .menu {
-        display: block;
-        background-color: transparent;
-        color: white;
-        font-size: 35px;
-        position: absolute;
-        top: 15px;
-        left: 20px;
-        border: none;
-        cursor: pointer;
     }
     .event_info {
         flex-direction: column;
