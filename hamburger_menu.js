@@ -9,18 +9,31 @@ var forEach = function (t, o, r) {
 document.addEventListener("DOMContentLoaded", function () {
     var hamburgers = document.querySelectorAll(".hamburger");
     var nav = document.getElementById("main-nav");
+    var body = document.body;
 
     if (hamburgers.length > 0) {
-        forEach(hamburgers, function (hamburger) {
-            hamburger.addEventListener(
-                "click",
-                function () {
-                    this.classList.toggle("is-active");
-                    // Open/close menu
-                    if (nav) nav.classList.toggle("open");
-                },
-                false
-            );
+        hamburgers.forEach(function (hamburger) {
+            hamburger.addEventListener("click", function () {
+                this.classList.toggle("is-active");
+                // Toggle navigation menu open/close
+                if (nav) nav.classList.toggle("open");
+                // Toggle scroll lock on body when menu is open/closed
+                body.classList.toggle("menu-open");
+            });
+        });
+    }
+
+    // Close menu when any menu link is clicked (recommended UX)
+    if (nav) {
+        nav.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                nav.classList.remove("open");
+                body.classList.remove("menu-open");
+                // Reset hamburger icon state
+                hamburgers.forEach(function (hamburger) {
+                    hamburger.classList.remove("is-active");
+                });
+            });
         });
     }
 });

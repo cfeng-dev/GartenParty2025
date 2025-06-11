@@ -292,9 +292,8 @@ footer {
     align-items: center;
     font-size: 14px;
 }
-.hamburger {
-    display: none;
-}
+
+/* --- Desktop Navigation --- */
 #main-nav {
     display: block;
     position: static;
@@ -303,66 +302,13 @@ footer {
     background: transparent;
     opacity: 1;
 }
+/* --- Hamburger icon nur mobile anzeigen --- */
+.hamburger {
+    display: none;
+}
 
 /* Mobile optimization: */
 @media screen and (max-width: 600px) {
-    .hamburger {
-        display: block;
-        position: fixed;
-        top: 4px;
-        right: 8px;
-        z-index: 2000; /* higher than the menu (e.g. 2000 > 1100) */
-    }
-
-    /* Fullscreen Styles (mobile only) */
-    #main-nav {
-        display: none !important;
-        position: fixed;
-        inset: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(30, 30, 30, 0.97);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        z-index: 1100;
-        opacity: 0;
-        transition: opacity 0.3s;
-    }
-    #main-nav.open {
-        display: flex !important;
-        opacity: 1;
-    }
-    #main-nav ul {
-        position: static !important;
-        right: auto !important;
-        top: auto !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 0;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    #main-nav li {
-        font-size: 1.8rem;
-        margin-right: 0 !important;
-        margin-bottom: 0 !important;
-        line-height: 50px !important;
-    }
-
-    #main-nav a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.2s;
-    }
-    #main-nav a:hover {
-        color: #f7c873;
-    }
-
     header ul {
         display: none;
     }
@@ -482,5 +428,67 @@ footer {
         text-align: center;
         height: auto;
         padding: 16px 0;
+    }
+
+    /* --- Mobile Navigation --- */
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 4px;
+        right: 8px;
+        z-index: 2000; /* higher than the menu (e.g. 2000 > 1100) */
+    }
+
+    /* Fullscreen Styles (mobile only) */
+    #main-nav {
+        display: none;
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(30, 30, 30, 0.97);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1100;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    #main-nav.open {
+        display: flex;
+        opacity: 1;
+    }
+    #main-nav ul {
+        position: static;
+        right: auto;
+        top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    #main-nav li {
+        font-size: 1.8rem;
+        margin-right: 0;
+        margin-bottom: 0;
+        line-height: 50px;
+    }
+
+    #main-nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.2s;
+    }
+    #main-nav a:hover {
+        color: #f7c873;
+    }
+    body.menu-open {
+        overflow: hidden;
+        height: 100vh;
+        position: relative;
     }
 }
