@@ -29,7 +29,7 @@ h1 {
     left: 120px;
     top: 0;
     line-height: 80px;
-    background-image: url(images/logo);
+    /* background-image: url(images/logo); */
     background-repeat: no-repeat;
     background-position: center;
     width: 210px;
@@ -68,6 +68,7 @@ header a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .news h2 {
     font-size: 60px;
@@ -96,6 +97,12 @@ header a:hover {
     align-items: center;
     font-size: 20px;
     line-height: 1.8em;
+}
+.slogan blockquote {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 30px 10px; /* top/bottom and side spacing */
+    font-weight: 360;
 }
 .slogan-text {
     text-align: center;
@@ -142,10 +149,12 @@ header a:hover {
     justify-content: center;
 }
 .info h2 {
+    text-align: center;
     font-size: 40px;
     margin-bottom: 30px;
 }
 .info p {
+    max-width: 80%;
     text-align: center;
     line-height: 2em;
 }
@@ -178,10 +187,11 @@ header a:hover {
 .highlights {
     display: flex;
     background-color: #ede9db;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-items: stretch; /* All children are raised equally */
-    padding: 100px 180px 80px;
+    padding: 100px 120px 80px; /* top, left and right, bottom */
+    gap: 12%;
 }
 .highlights div {
     width: 300px;
@@ -332,6 +342,80 @@ footer {
 /* --- Hamburger icon nur mobile anzeigen --- */
 .hamburger {
     display: none;
+}
+
+/* ====== Tablet Optimization ====== */
+@media screen and (min-width: 601px) and (max-width: 1025px) {
+    /* Event info: stack vertically on tablet */
+    .event_info {
+        flex-direction: column;
+        align-items: center; /* centers both */
+        text-align: center; /* centered content for this section */
+    }
+    .event_info img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 0px;
+    }
+    .event_info iframe {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 1 / 1; /* 1:1 square, modern way */
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .info {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 0px; /* vertical + lateral distance */
+        text-align: center;
+        margin: 0px 0;
+    }
+    .info h2 {
+        font-size: 42px;
+    }
+    .info p {
+        max-width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Highlights: stack vertically on tablet */
+    .highlights {
+        flex-direction: column;
+        align-items: center; /* Centers the boxes horizontally */
+        justify-content: center;
+        padding: 60px 5vw 30px 5vw; /* top right bottom left */
+    }
+    .highlights div {
+        margin-bottom: 66px; /* Distance between the individual boxes */
+        width: 100%;
+        max-width: 80%; /* Maximum as wide as the image */
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .highlights img {
+        width: 100%;
+        max-width: 72%; /* wide of the image */
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .highlights h3 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .highlights p {
+        font-size: 15px;
+        line-height: 1.6em;
+        max-width: 63%; /* <-- narrower than image */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12px; /* distance from the title */
+    }
 }
 
 /* ====== Mobile Optimization ====== */
