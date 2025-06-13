@@ -23,9 +23,9 @@
             <nav id="main-nav">
                 <ul>
                     <!-- Navigation links -->
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="ueber_uns.html">Über uns</a></li>
-                    <li><a href="ort_und_anfahrt.html">Ort & Anfahrt</a></li>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="ueber_uns.html" data-i18n="about">Über uns</a></li>
+                    <li><a href="ort_und_anfahrt.html" data-i18n="location">Ort & Anfahrt</a></li>
                     <li class="lang-switch">
                         <button class="lang-btn" data-lang="de" title="Deutsch">
                             <img src="images/flag_de.svg" alt="Deutsch" class="flag-icon" />
@@ -42,15 +42,14 @@
         <main>
             <!-- Top banner/news with event invitation -->
             <section class="news">
-                <h2>Gartenparty am 12. Juli!</h2>
-                <p>Genieße mit uns einen entspannten Abend im Grünen mit gutem Essen, Musik und bester Gesellschaft</p>
-                <!-- Call-to-action link -->
-                <p><a href="#party-invitation">Ja, ich bin dabei</a></p>
+                <h2 data-i18n="newsTitle">Gartenparty am 12. Juli!</h2>
+                <p data-i18n="newsText">Genieße mit uns einen entspannten Abend im Grünen mit gutem Essen, Musik und bester Gesellschaft</p>
+                <p><a href="#party-invitation" data-i18n="cta">Ja, ich bin dabei</a></p>
             </section>
 
             <!-- Slogan section -->
             <section class="slogan">
-                <blockquote>
+                <blockquote data-i18n="slogan">
                     "Gemeinsam feiern und den Sommer in <br />
                     unserem Garten in Kreuzlingen genießen"
                 </blockquote>
@@ -60,8 +59,8 @@
             <section class="event_info">
                 <img src="images/kreuzlingen_hafen.png" alt="kreuzlingen_hafen" />
                 <div class="info" style="padding: 33px 0">
-                    <h2>Gemütliches Gartenfest am 12. Juli 2025</h2>
-                    <p>
+                    <h2 data-i18n="eventTitle">Gemütliches Gartenfest am 12. Juli 2025</h2>
+                    <p data-i18n="eventDetails">
                         Die Party beginnt am <span style="color: #197b30; font-weight: bold">Samstag, den 12.07.</span>, um <span style="color: #d97325; font-weight: bold">17 Uhr</span> in unserem
                         Garten in Kreuzlingen.<br />
                         Für Snacks, Salate, Baguette, Soßen und glutenfreies Brot sowie Getränke ist gesorgt.<br />
@@ -75,11 +74,12 @@
                         class="calendar-btn google"
                     >
                         <img src="images/icon_google.svg" alt="Google Icon" style="width: 27px; height: 27px; margin-right: 0px" />
-                        Google Kalender
+                        <span data-i18n="googleCalBtn">Google Kalender</span>
                     </a>
                     <!-- iPhone Kalender-Button -->
                     <a href="gartenparty2025.ics" target="_blank" rel="noopener" class="calendar-btn apple"
-                        ><img src="images/icon_apple.svg" alt="Apple Icon" style="width: 27px; height: 27px; margin-right: 0px" /> iPhone Kalender
+                        ><img src="images/icon_apple.svg" alt="Apple Icon" style="width: 27px; height: 27px; margin-right: 0px" />
+                        <span data-i18n="appleCalBtn">iPhone Kalender</span>
                     </a>
                 </div>
             </section>
@@ -88,31 +88,31 @@
                 <!-- Drinks Section -->
                 <div>
                     <img src="images/drinks.png" alt="drinks" />
-                    <h3>Erfrischende Getränke</h3>
+                    <h3 data-i18n="drinksTitle">Erfrischende Getränke</h3>
                     <!-- Drinks description -->
-                    <p>Kühle Getränke und Cocktails, frisch gemixt für den perfekten Sommergenuss.<br />Ideal, um an warmen Tagen den Durst zu löschen</p>
+                    <p data-i18n="drinksDesc">Kühle Getränke und Cocktails, frisch gemixt für den perfekten Sommergenuss.<br />Ideal, um an warmen Tagen den Durst zu löschen</p>
                 </div>
 
                 <!-- Grill Section -->
                 <div>
                     <img src="images/grill.png" alt="grill" />
-                    <h3>Leckeres Grillgut</h3>
+                    <h3 data-i18n="grillTitle">Leckeres Grillgut</h3>
                     <!-- Grill description -->
-                    <p>Herzhafte Spieße, knackige Würstchen und frisches Gemüse vom Grill.<br />Perfekt für den gemütlichen Sommerabend</p>
+                    <p data-i18n="grillDesc">Herzhafte Spieße, knackige Würstchen und frisches Gemüse vom Grill.<br />Perfekt für den gemütlichen Sommerabend</p>
                 </div>
 
                 <!-- Games Section -->
                 <div>
                     <img src="images/beerpong.png" alt="beerpong" />
-                    <h3>Garten Spiele</h3>
+                    <h3 data-i18n="gamesTitle">Garten Spiele</h3>
                     <!-- Games description -->
-                    <p>Spaß und Unterhaltung mit Trinkspielen wie Beerpong oder Flunkyball.<br />Lachen und gute Laune garantiert</p>
+                    <p data-i18n="gamesDesc">Spaß und Unterhaltung mit Trinkspielen wie Beerpong oder Flunkyball.<br />Lachen und gute Laune garantiert</p>
                 </div>
             </section>
 
             <section id="party-invitation" class="rsvp">
-                <h2>Bitte gib uns Bescheid!</h2>
-                <p>
+                <h2 data-i18n="rsvpTitle">Bitte gib uns Bescheid!</h2>
+                <p data-i18n="rsvpText">
                     Wir freuen uns, wenn du dabei bist.<br />
                     Bitte fülle das Formular aus, damit wir planen können.
                 </p>
@@ -120,12 +120,12 @@
                     <!-- Hidden field for spam protection -->
                     <input type="hidden" name="form-name" value="party-invitation" />
                     <p style="display: none">
-                        <label>Don not fill this out if you're human: <input name="bot-field" /></label>
+                        <label data-i18n="honeypot">Don not fill this out if you're human: <input name="bot-field" /></label>
                     </p>
 
                     <!-- Name -->
                     <p>
-                        <strong>Dein Name<span style="color: red">*</span></strong
+                        <strong data-i18n="nameLabel">Dein Name<span style="color: red">*</span></strong
                         ><br />
                         <label>
                             <input type="text" name="name" required />
@@ -134,7 +134,7 @@
 
                     <!-- E-Mail -->
                     <p>
-                        <strong>Deine E-Mail<span style="color: red">*</span></strong
+                        <strong data-i18n="emailLabel">Deine E-Mail<span style="color: red">*</span></strong
                         ><br />
                         <label>
                             <input type="email" name="email" required />
@@ -143,7 +143,7 @@
 
                     <!-- Confirmation for the party -->
                     <p>
-                        <strong>Kommst du zur Party?<span style="color: red">*</span></strong
+                        <strong data-i18n="attendLabel">Kommst du zur Party?<span style="color: red">*</span></strong
                         ><br />
                         <span class="radio-group">
                             <label> <input type="radio" name="teilnahme" value="Ja" required /> Ja </label>
@@ -153,7 +153,7 @@
 
                     <!-- Query overnight stay -->
                     <p>
-                        <strong>Übernachtest du bei uns?<span style="color: red">*</span></strong
+                        <strong data-i18n="overnightLabel">Übernachtest du bei uns?<span style="color: red">*</span></strong
                         ><br />
                         <span class="radio-group">
                             <label> <input type="radio" name="uebernachtung" value="Ja" required /> Ja </label>
@@ -163,35 +163,35 @@
 
                     <!-- Intolerances -->
                     <p>
-                        <strong>Was magst du nicht?</strong><br />
+                        <strong data-i18n="restrictionsLabel">Was magst du nicht?</strong><br />
                         <label>
                             <input type="checkbox" name="restriktionen" value="Fleisch" />
-                            Fleisch
+                            <span data-i18n="meat">Fleisch</span>
                         </label>
                         <label>
                             <input type="checkbox" name="restriktionen" value="Gluten" />
-                            Gluten
+                            <span data-i18n="gluten">Gluten</span>
                         </label>
                         <label>
                             <input type="checkbox" name="restriktionen" value="Alkoholfreies Bier" />
-                            Alkoholfreies Bier
+                            <span data-i18n="nonalcohol">Alkoholfreies Bier</span>
                         </label>
                         <label>
-                            Sonstiges:
+                            <span data-i18n="other">Sonstiges:</span>
                             <input type="text" name="restriktionen_andere" id="andere-text" placeholder="Bitte eintragen" style="width: 160px; height: 27px" />
                         </label>
                     </p>
 
                     <!-- Personal message -->
                     <p>
-                        <strong>Nachricht / Wünsche:</strong><br />
+                        <strong data-i18n="msgLabel">Nachricht / Wünsche:</strong><br />
                         <label>
                             <textarea name="nachricht" rows="4"></textarea>
                         </label>
                     </p>
 
                     <p>
-                        <button type="submit">Absenden</button>
+                        <button type="submit" data-i18n="submitBtn">Absenden</button>
                     </p>
                 </form>
             </section>
@@ -199,7 +199,7 @@
 
         <!-- Copyright information -->
         <footer>
-            <p>Copyright © 2025 Gartenparty-Remisbergstrasse. All Rights Reserved.</p>
+            <p data-i18n="copyright">Copyright © 2025 Gartenparty-Remisbergstrasse. All Rights Reserved.</p>
         </footer>
 
         <!-- Import GSAP animation library -->

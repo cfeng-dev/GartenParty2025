@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ort & Anfahrt</title>
+        <title data-i18n="ort_und_anfahrt_title">Ort & Anfahrt</title>
         <!-- Library for animated hamburger menu icons -->
         <link rel="stylesheet" href="css/hamburgers.css" />
         <!-- Main site stylesheet -->
@@ -12,7 +12,7 @@
     <body>
         <!-- === Header: Site title and navigation === -->
         <header>
-            <h1>Gartenparty 2025</h1>
+            <h1 data-i18n="ort_und_anfahrt_siteTitle">Gartenparty 2025</h1>
 
             <!-- Hamburger menu button for mobile navigation -->
             <button class="hamburger hamburger--slider" type="button" aria-label="Toggle navigation menu">
@@ -25,9 +25,17 @@
             <nav id="main-nav">
                 <ul>
                     <!-- Navigation links -->
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="ueber_uns.html">Über uns</a></li>
-                    <li><a href="ort_und_anfahrt.html">Ort & Anfahrt</a></li>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="ueber_uns.html" data-i18n="about">Über uns</a></li>
+                    <li><a href="ort_und_anfahrt.html" data-i18n="location">Ort & Anfahrt</a></li>
+                    <li class="lang-switch">
+                        <button class="lang-btn" data-lang="de" title="Deutsch">
+                            <img src="images/flag_de.svg" alt="Deutsch" class="flag-icon" />
+                        </button>
+                        <button class="lang-btn" data-lang="en" title="English">
+                            <img src="images/flag_gb.svg" alt="English" class="flag-icon" />
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -41,12 +49,13 @@
             <section class="event_info">
                 <!-- Text info about the party location -->
                 <div class="info" style="background: #ede9db">
-                    <h2>Ort der Gartenparty</h2>
-                    <p>
-                        <strong
-                            >Remisbergstrasse 3, 8280 Kreuzlingen,<br />
-                            Thurgau, Schweiz</strong
-                        ><br />
+                    <h2 data-i18n="partyLocationHeading">Ort der Gartenparty</h2>
+                    <p data-i18n="partyLocationDesc">
+                        <strong>
+                            Remisbergstrasse 3, 8280 Kreuzlingen,<br />
+                            Thurgau, Schweiz
+                        </strong>
+                        <br />
                         Gute Anbindung mit Bus und Bahn.<br />
                         Parkplätze sind in der Nähe vorhanden.
                     </p>
@@ -66,7 +75,7 @@
 
             <!-- Welcome message section at the bottom -->
             <section class="slogan" style="background: #045322">
-                <p class="slogan-text">
+                <p class="slogan-text" data-i18n="travelWish">
                     Wir wünschen dir eine angenehme Anreise<br />
                     komm gut an und bis bald bei der Gartenparty!
                 </p>
@@ -75,7 +84,7 @@
 
         <!-- Copyright information -->
         <footer>
-            <p>Copyright © 2025 Gartenparty-Remisbergstrasse. All Rights Reserved.</p>
+            <p data-i18n="copyright">Copyright © 2025 Gartenparty-Remisbergstrasse. All Rights Reserved.</p>
         </footer>
 
         <!-- Import GSAP animation library -->
@@ -83,5 +92,7 @@
 
         <!-- Import custom script for hamburger menu functionality -->
         <script src="js/hamburger_menu.js"></script>
+
+        <script src="js/language_switcher.js"></script>
     </body>
 </html>
