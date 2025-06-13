@@ -55,6 +55,30 @@ header a:hover {
     text-decoration: underline;
 }
 
+.flag-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.lang-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 6px;
+    transition: filter 0.2s;
+    padding: 0;
+}
+.lang-btn:hover,
+.lang-btn.active {
+    filter: brightness(0.8);
+}
+.lang-switch {
+    display: inline;
+    /* margin-left: 20px; */
+}
+
 /* News/Banner section: background image with overlay, centered content */
 .news {
     background-color: antiquewhite;
