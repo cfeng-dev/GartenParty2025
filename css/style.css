@@ -55,6 +55,13 @@ header a:hover {
     text-decoration: underline;
 }
 
+/* Container for language switch in navigation */
+.lang-switch {
+    display: inline;
+    /* margin-left: 20px; */
+}
+
+/* Language flag icon styling */
 .flag-icon {
     width: 28px;
     height: 28px;
@@ -72,11 +79,7 @@ header a:hover {
 }
 .lang-btn:hover,
 .lang-btn.active {
-    filter: brightness(0.8);
-}
-.lang-switch {
-    display: inline;
-    /* margin-left: 20px; */
+    filter: brightness(0.8); /* Darken flag icon when hovered or active */
 }
 
 /* News/Banner section: background image with overlay, centered content */

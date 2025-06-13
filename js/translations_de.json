@@ -1,0 +1,58 @@
+{
+    "home": "Home",
+    "about": "Über uns",
+    "location": "Ort & Anfahrt",
+    "copyright": "Copyright © 2025 Gartenparty-Remisbergstrasse. All Rights Reserved.",
+
+    "newsTitle": "Gartenparty am 12. Juli!",
+    "newsText": "Genieße mit uns einen entspannten Abend im Grünen mit gutem Essen, Musik und bester Gesellschaft",
+    "cta": "Ja, ich bin dabei",
+
+    "slogan": "„Gemeinsam feiern und den Sommer in <br />unserem Garten in Kreuzlingen genießen“",
+
+    "eventTitle": "Gemütliches Gartenfest am 12. Juli 2025",
+    "eventDetails": "Die Party beginnt am <span style=\"color: #197b30; font-weight: bold\">Samstag, den 12.07.</span>, um <span style=\"color: #d97325; font-weight: bold\">17 Uhr</span> in unserem Garten in Kreuzlingen.<br />Für Snacks, Salate, Baguette, Soßen und glutenfreies Brot sowie Getränke ist gesorgt.<br />Wer mag, kann gerne eigenes Grillgut mitbringen.<br />",
+    "googleCalBtn": "Google Kalender",
+    "appleCalBtn": "iPhone Kalender",
+
+    "drinksTitle": "Erfrischende Getränke",
+    "drinksDesc": "Kühle Getränke und Cocktails, frisch gemixt für den perfekten Sommergenuss.<br />Ideal, um an warmen Tagen den Durst zu löschen",
+    "grillTitle": "Leckeres Grillgut",
+    "grillDesc": "Herzhafte Spieße, knackige Würstchen und frisches Gemüse vom Grill.<br />Perfekt für den gemütlichen Sommerabend",
+    "gamesTitle": "Garten Spiele",
+    "gamesDesc": "Spaß und Unterhaltung mit Trinkspielen wie Beerpong oder Flunkyball.<br />Lachen und gute Laune garantiert",
+
+    "rsvpTitle": "Bitte gib uns Bescheid!",
+    "rsvpText": "Wir freuen uns, wenn du dabei bist.<br />Bitte fülle das Formular aus, damit wir planen können.",
+    "honeypot": "Don not fill this out if you're human:",
+    "nameLabel": "Dein Name<span style='color: red'>*</span>",
+    "emailLabel": "Deine E-Mail<span style='color: red'>*</span>",
+    "attendLabel": "Kommst du zur Party?<span style='color: red'>*</span>",
+    "overnightLabel": "Übernachtest du bei uns?<span style='color: red'>*</span>",
+    "yes": "Ja",
+    "no": "Nein",
+    "restrictionsLabel": "Was magst du nicht?",
+    "meat": "Fleisch",
+    "gluten": "Gluten",
+    "nonalcohol": "Alkoholfreies Bier",
+    "other": "Sonstiges:",
+    "placeholderOther": "Bitte eintragen",
+    "msgLabel": "Nachricht / Wünsche:",
+    "submitBtn": "Absenden",
+
+    "ueber_uns_title": "Über uns",
+    "ueber_uns_siteTitle": "Gartenparty 2025",
+    "hannahName": "Hannah",
+    "hannahDesc": "Hannah wohnt am längsten in der Remisbergstrasse im <strong>Erdgeschoss</strong>. Sie ist gerne unterwegs – ob auf Reisen, beim Social Run Club oder beim CrossFit und sagt zu einer Runde Rage Cage nie nein.",
+    "svenpauliName": "Sven & Pauli",
+    "svenpauliDesc": "Sven und Pauli sind die Neuesten im Haus und wohnen im <strong>1. Stock</strong>. Sie sind gern aktiv – ob beim Bouldern, Wandern oder Fahrrad fahren - und haben seit ihrem Einzug den Garten neu gestaltet.",
+    "chinisimoneName": "Chin-I & Simone",
+    "chinisimoneDesc": "Chin-I und Simone wohnen im <strong>2. Stock</strong>. Während Simone beim CrossFit alles gibt, spielt Chin-I lieber Basketball. Beide kochen gerne und sind beim Beerpong immer für ein Match zu haben.",
+    "welcome": "<strong>Wir freuen uns darauf <br />mit dir eine tolle Zeit zu haben!</strong>",
+
+    "ort_und_anfahrttitle": "Ort & Anfahrt",
+    "ort_und_anfahrtsiteTitle": "Gartenparty 2025",
+    "partyLocationHeading": "Ort der Gartenparty",
+    "partyLocationDesc": "<strong>Remisbergstrasse 3, 8280 Kreuzlingen,<br />Thurgau, Schweiz</strong><br />Gute Anbindung mit Bus und Bahn.<br />Parkplätze sind in der Nähe vorhanden.",
+    "travelWish": "Wir wünschen dir eine angenehme Anreise<br />komm gut an und bis bald bei der Gartenparty!"
+}

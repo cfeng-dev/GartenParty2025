@@ -1,4 +1,9 @@
-// hamburger_menu.js
+/**
+ * @file hamburger_menu.js
+ * @description Hamburger menu animation and navigation toggle for Gartenparty 2025 website
+ * @date Created on: 11.06.2025
+ * @author C.Feng
+ */
 
 // Universal forEach for Arrays/NodeLists/Objects
 var forEach = function (t, o, r) {
