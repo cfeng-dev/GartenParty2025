@@ -108,6 +108,7 @@ header a:hover {
 }
 .news a {
     color: white;
+    /* font-weight: bold; */
     text-decoration: none;
     border: 3px solid #acacac;
     padding: 10px 20px;
