@@ -41,6 +41,9 @@ function switchLanguage(lang) {
 
         // Save the user's language preference in localStorage
         localStorage.setItem("lang", lang);
+
+        // Register the click handler for the parking info popup after language switch
+        ParkingInfoHandler();
     });
 }
 

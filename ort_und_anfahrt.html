@@ -57,7 +57,7 @@
                         </strong>
                         <br />
                         Gute Anbindung mit Bus und Bahn.<br />
-                        Parkplätze sind in der Nähe vorhanden.
+                        <a id="parking-link" style="color: #197bff; text-decoration: underline; cursor: pointer">Parkplätze</a> sind in der Nähe vorhanden.
                     </p>
                 </div>
 
@@ -95,5 +95,26 @@
 
         <!-- Import language switcher script for multi-language support -->
         <script src="js/language_switcher.js"></script>
+
+        <!-- Import SweetAlert2 for nice info popups -->
+        <script src="js/sweetalert2.all.min.js"></script>
+
+        <script>
+            // Registers the click handler for the parking info popup
+            function ParkingInfoHandler() {
+                var link = document.getElementById("parking-link");
+                if (link) {
+                    link.onclick = function (e) {
+                        e.preventDefault();
+                        Swal.fire({
+                            title: translations.parkingInfoTitle,
+                            html: "<div style='text-align:left;'>" + translations.parkingInfoBody + "</div>",
+                            icon: "info",
+                            confirmButtonText: translations.parkingInfoButton,
+                        });
+                    };
+                }
+            }
+        </script>
     </body>
 </html>
