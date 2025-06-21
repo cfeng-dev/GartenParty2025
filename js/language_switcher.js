@@ -46,6 +46,8 @@ function switchLanguage(lang) {
         if (typeof ParkingInfoHandler === "function") {
             ParkingInfoHandler();
         }
+
+        document.body.style.visibility = "visible";
     });
 }
 

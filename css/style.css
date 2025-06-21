@@ -9,9 +9,9 @@ html {
     margin: 0;
 }
 
-/* Set dark background for the whole page */
 body {
     background-color: #000000;
+    visibility: hidden; /* Hide body until translations are loaded (prevents FOUT!) */
 }
 
 /* Header: fixed at the top, with semi-transparent background */
@@ -266,12 +266,12 @@ header a:hover {
     background-color: transparent;
     color: white;
     border: 1px solid #949d9a;
-    padding: 10px;
+    padding: 9px 15px; /* vertical + lateral distance */
     border-radius: 5px;
 }
 
 .rsvp button {
-    width: 80px;
+    /* width: 80px; */
     cursor: pointer;
 }
 input::placeholder {
@@ -346,6 +346,9 @@ form.party-form textarea:focus {
     border-color: #a6c8ff;
     outline: none;
     background-color: #2a2f34;
+}
+textarea {
+    resize: none;
 }
 
 footer {
