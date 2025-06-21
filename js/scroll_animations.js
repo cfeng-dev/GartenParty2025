@@ -16,12 +16,24 @@ document.addEventListener("DOMContentLoaded", function () {
             y: 60,
             duration: 1.2,
             delay: i * 0.1,
-            ease: "back.out(1.4)",
+            ease: "power3.out",
             scrollTrigger: {
                 trigger: item,
                 start: "top 85%",
-                toggleActions: "restart none restart none",
+                toggleActions: "play none none none",
             },
         });
+    });
+
+    gsap.from(".slogan-text", {
+        opacity: 0,
+        y: 40,
+        duration: 1.1,
+        ease: "back.out(1.3)",
+        scrollTrigger: {
+            trigger: ".slogan-text",
+            start: "top 90%",
+            toggleActions: "play none none none",
+        },
     });
 });
