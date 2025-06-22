@@ -340,6 +340,7 @@ form.party-form textarea {
     font-size: 15px;
     box-sizing: border-box;
     transition: border-color 0.3s;
+    resize: none;
 }
 form.party-form input[type="text"]:focus,
 form.party-form input[type="email"]:focus,
@@ -347,9 +348,6 @@ form.party-form textarea:focus {
     border-color: #a6c8ff;
     outline: none;
     background-color: #2a2f34;
-}
-textarea {
-    resize: none;
 }
 
 footer {
