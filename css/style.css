@@ -1,6 +1,13 @@
 /* ----- PC Standard Styles ----- */
-html {
+/* html {
     scroll-behavior: smooth;
+} */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 /* Reset margin and padding for all elements */

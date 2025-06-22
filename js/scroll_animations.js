@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ease: "back.out(1.3)",
             scrollTrigger: {
                 trigger: ".slogan-text",
-                start: "top 90%",
+                start: "top 99%",
                 toggleActions: "play none none none",
             },
         });
