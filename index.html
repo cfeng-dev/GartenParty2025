@@ -10,37 +10,37 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
+        <!-- === Header: Site title and navigation === -->
+        <header>
+            <!-- Hamburger menu button for mobile navigation -->
+            <button class="hamburger hamburger--slider" type="button" aria-label="Toggle navigation menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <!-- Main navigation menu -->
+            <nav id="main-nav">
+                <ul>
+                    <!-- Navigation links -->
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="ueber_uns.html" data-i18n="about">Über uns</a></li>
+                    <li><a href="ort_und_anfahrt.html" data-i18n="location">Ort & Anfahrt</a></li>
+                    <li class="lang-switch">
+                        <button class="lang-btn" data-lang="de" title="Deutsch">
+                            <img src="images/flag_de.svg" alt="Deutsch" class="flag-icon" />
+                        </button>
+                        <button class="lang-btn" data-lang="en" title="English">
+                            <img src="images/flag_gb.svg" alt="English" class="flag-icon" />
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- === End Header === -->
+
         <div id="smooth-wrapper">
             <div id="smooth-content">
-                <!-- === Header: Site title and navigation === -->
-                <header>
-                    <!-- Hamburger menu button for mobile navigation -->
-                    <button class="hamburger hamburger--slider" type="button" aria-label="Toggle navigation menu">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
-                    </button>
-
-                    <!-- Main navigation menu -->
-                    <nav id="main-nav">
-                        <ul>
-                            <!-- Navigation links -->
-                            <li><a href="index.html" data-i18n="home">Home</a></li>
-                            <li><a href="ueber_uns.html" data-i18n="about">Über uns</a></li>
-                            <li><a href="ort_und_anfahrt.html" data-i18n="location">Ort & Anfahrt</a></li>
-                            <li class="lang-switch">
-                                <button class="lang-btn" data-lang="de" title="Deutsch">
-                                    <img src="images/flag_de.svg" alt="Deutsch" class="flag-icon" />
-                                </button>
-                                <button class="lang-btn" data-lang="en" title="English">
-                                    <img src="images/flag_gb.svg" alt="English" class="flag-icon" />
-                                </button>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
-                <!-- === End Header === -->
-
                 <main>
                     <!-- Top banner/news with event invitation -->
                     <section class="news">
