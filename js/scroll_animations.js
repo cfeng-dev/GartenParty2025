@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 ease: "power3.out",
                 scrollTrigger: {
                     trigger: item,
-                    start: "top 85%",
+                    start: "top 100%",
                     toggleActions: "play none none none",
                 },
             });
