@@ -200,6 +200,9 @@ header a:hover {
     text-align: center;
     line-height: 2em;
 }
+.info.left p {
+    text-align: left;
+}
 
 /* Calendar buttons: icon + text side by side */
 .calendar-btn {
@@ -214,6 +217,9 @@ header a:hover {
     font-weight: bold;
     font-size: 1rem;
     transition: filter 0.2s;
+}
+.info .calendar-btn:first-of-type {
+    margin-top: 30px;
 }
 .calendar-btn.google {
     background: #2196f3;
@@ -564,6 +570,7 @@ footer {
     }
     .info h2 {
         font-size: 33px;
+        padding: 0px 12px; /* vertical + lateral distance */
     }
     .info p {
         max-width: 300px;
