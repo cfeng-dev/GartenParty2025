@@ -58,5 +58,8 @@
 
     "parkingInfoTitle": "Parking",
     "parkingInfoBody": "<ul style='margin-left:1em; padding-left:0; list-style-type: disc;'><li style='margin-bottom:0.5em;'>Bärenplatz parking <a href='https://maps.app.goo.gl/fsKnvLbEUrAqQUud8' target='_blank' style='margin-left:0.5em; font-size:110%; text-decoration:none;'>📍</a></li><li style='margin-bottom:0.7em;'>Oberer Schulweg parking <a href='https://maps.app.goo.gl/WwTjNm3xY5pQ4fhNA' target='_blank' style='margin-left:0.5em; font-size:110%; text-decoration:none;'>📍</a></li><li>Overnight guests can park for free directly at our place.</li></ul><div style='margin-top:1.2em; font-size:90%; color:#555;'><b>Paid parking:</b> Daily 7:00 a.m.–8:00 p.m., 1 CHF per hour.<br><b>Tip:</b> You can conveniently pay with the EasyPark app.</div>",
-    "parkingInfoButton": "Close"
+    "parkingInfoButton": "Close",
+
+    "closedTitle": "Registration closed",
+    "closedBody": "Registration for the party is no longer possible. The form was open until Sunday, July 6, 2025, 11:59 PM."
 }

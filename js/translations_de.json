@@ -58,5 +58,8 @@
 
     "parkingInfoTitle": "Parkplätze",
     "parkingInfoBody": "<ul style='margin-left:1em; padding-left:0; list-style-type: disc;'><li style='margin-bottom:0.5em;'>Parkplatz Bärenplatz <a href='https://maps.app.goo.gl/fsKnvLbEUrAqQUud8' target='_blank' style='margin-left:0.5em; font-size:110%; text-decoration:none;'>📍</a></li><li style='margin-bottom:0.7em;'>Parkplatz Oberer Schulweg <a href='https://maps.app.goo.gl/WwTjNm3xY5pQ4fhNA' target='_blank' style='margin-left:0.5em; font-size:110%; text-decoration:none;'>📍</a></li><li>Übernachtungsgäste können kostenlos direkt bei uns parken.</li></ul><div style='margin-top:1.2em; font-size:90%; color:#555;'><b>Kostenpflichtig:</b> Täglich 7:00–20:00 Uhr, 1 CHF je Stunde.<br><b>Tipp:</b> Bezahlung bequem mit der EasyPark-App.</div>",
-    "parkingInfoButton": "Schließen"
+    "parkingInfoButton": "Schließen",
+
+    "closedTitle": "Anmeldung geschlossen",
+    "closedBody": "Die Anmeldung zur Party ist leider nicht mehr möglich. Das Formular war bis Sonntag, 06.07.2025, 23:59 Uhr offen."
 }

@@ -125,7 +125,8 @@
                             Wir freuen uns, wenn du dabei bist.<br />
                             Bitte fülle das Formular aus, damit wir planen können.
                         </p>
-                        <form class="party-form" name="party-invitation" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <!-- HINT: Add novalidate and data-netlify="false" to disable validation & Netlify -->
+                        <form class="party-form" name="party-invitation" method="POST" data-netlify="false" netlify-honeypot="bot-field" novalidate>
                             <!-- Hidden field for spam protection -->
                             <input type="hidden" name="form-name" value="party-invitation" />
                             <p style="display: none">
@@ -225,6 +226,27 @@
 
                 <!-- Import language switcher script for multi-language support -->
                 <script src="js/language_switcher.js"></script>
+
+                <!-- Import SweetAlert2 for nice info popups -->
+                <script src="js/sweetalert2.all.min.js"></script>
+
+                <script>
+                    // Prevent form submission
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const form = document.querySelector(".party-form");
+                        if (form) {
+                            form.addEventListener("submit", function (e) {
+                                e.preventDefault();
+                                Swal.fire({
+                                    title: translations.closedTitle,
+                                    html: "<div style='text-align:left;'>" + translations.closedBody + "</div>",
+                                    icon: "error",
+                                    confirmButtonText: "OK",
+                                });
+                            });
+                        }
+                    });
+                </script>
             </div>
         </div>
     </body>
